@@ -6,16 +6,16 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title>Le Wagon - Middleman - About</title>
-    <link href="stylesheets/application-337c11fe.css" rel="stylesheet" />
-    <link href="images/favicon-f15af148.png" rel="icon" type="image/png" />
+    <title></title>
+    <link href="../stylesheets/application-337c11fe.css" rel="stylesheet" />
+    <link href="../images/favicon-f15af148.png" rel="icon" type="image/png" />
   </head>
   <body>
     <!-- layouts/layout.erb -->
     <div class="navbar-wagon">
   <!-- Logo -->
   <a href="/" class="navbar-wagon-brand">
-    <img src="images/logo-acc9c0ec.png" id="logo" alt="Logo" />
+    <img src="../images/logo-acc9c0ec.png" id="logo" alt="Logo" />
   </a>
 
   <!-- Right Navigation -->
@@ -52,25 +52,51 @@
   </div>
 </div>
    <!-- inject layouts/_navbar.html.erb -->
-    <div id="about">
-  <div class="about-content">
-    <h1>This template was built with <i class="fa fa-heart"></i> by</h1>
-    <ul class="list-inline">
-        <li>
-<a href="https://kitt.lewagon.com/alumni/ssaunier" target="_blank">            <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="img-circle" alt="Ssaunier" />
-</a>          <h2>Sébastien Saunier</h2>
-          <p>
-<a href="https://github.com/ssaunier" target="_blank">              <i class="fa fa-github"></i> ssaunier
-</a>          </p>
-        </li>
-        <li>
-<a href="https://kitt.lewagon.com/alumni/Papillard" target="_blank">            <img src="https://kitt.lewagon.com/placeholder/users/Papillard" class="img-circle" alt="Papillard" />
-</a>          <h2>Boris Paillard</h2>
-          <p>
-<a href="https://github.com/Papillard" target="_blank">              <i class="fa fa-github"></i> Papillard
-</a>          </p>
-        </li>
-    </ul>
+    <!-- source/flats/show.html.erb -->
+
+<!-- Access data.flats with owner's name as key -->
+
+<!-- Inject flat data in template -->
+<div class="flat-banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%), url('https://kitt.lewagon.com/placeholder/cities/paris');">
+</div>
+<div class="container">
+  <div class="row">
+    <div class=".col-xs-12 col-sm-6 col-sm-offset-1">
+      <div class="detail">
+        <div class="owner-profile text-center">
+          <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="img-circle avatar-md" alt="Ssaunier" />
+          <p>ssaunier</p>
+        </div>
+        <div class="flat-detail">
+          <p>Sebastien's home</p>
+          <h1>Charming room in Montmartre</h1>
+          <p>Paris, France</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <form action="#" class="flat-form" >
+        <h4>Book this flat</h3>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-xs-6">
+              <input type="text" class="form-control" placeholder="checkin" id="checkin">
+            </div>
+            <div class="col-xs-6">
+              <input type="text" class="form-control" placeholder="checkout">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <select name="" id="guests" class="form-control">
+            <option value="1">1 guest</option>
+            <option value="2">2 guests</option>
+            <option value="3">3 guests</option>
+          </select>
+        </div>
+        <input type="submit" class="btn btn-danger" value="Book it" style="width: 100%">
+      </form>
+    </div>
   </div>
 </div>
                       <!-- Page content is injected here -->
@@ -87,6 +113,6 @@
   </div>
 </div>
    <!-- inject layouts/_footer.html.erb -->
-    <script src="javascripts/application-93de88c9.js"></script>
+    <script src="../javascripts/application-93de88c9.js"></script>
   </body>
 </html>
