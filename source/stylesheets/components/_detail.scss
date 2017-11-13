@@ -1,0 +1,27 @@
+.detail {
+  display: flex;
+  align-items: center;
+  h1 {
+  font-size: 18px;
+  margin: 0 0 12.5px 0;
+  color: $gray;
+  }
+  p {
+    font-size: 14px;
+    margin: 0 0 8px 0;
+    color: $gray;
+  }
+  .owner-profile {
+    padding: 20px;
+  }
+}
+
+.avatar-md {
+  height: 80px;
+}
+
+.flat-banner {
+  height: 400px;
+  background-position: center;
+  background-size: cover !important;
+}
